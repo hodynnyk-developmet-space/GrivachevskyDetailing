@@ -3,7 +3,7 @@
   "name": "Grivachevsky Detailing",
   "slug": "grivachevsky-detailing",
   "createdAt": "2026-09-24T11:35:24.509Z",
-  "updatedAt": "2026-09-24T15:29:11.069Z",
+  "updatedAt": "2026-09-24T15:49:58.661Z",
   "template": {
     "name": "Chameleon Core",
     "version": "1.x",
@@ -60,7 +60,7 @@
     "telegram": {
       "botUsername": "@GrivachevskyDetailing_bot",
       "ownerId": "960724157",
-      "miniAppUrl": "https://grivachevskydetailing.hodynnyk-development-space.workers.dev",
+      "miniAppUrl": "https://grivachevskydetailing.hodynnyk-development-space.workers.dev/",
       "description": ""
     },
     "cloudflare": {
