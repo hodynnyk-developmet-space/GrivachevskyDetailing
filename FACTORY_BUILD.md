@@ -8,14 +8,14 @@ Template: Chameleon Core / 1.x
 Worker: grivachevskydetailing
 D1: grivachevskydetailing
 Telegram: @GrivachevskyDetailing_bot
-Mini App languages: uk, en, pl
-Bot languages: uk, pl, en
+Mini App languages: uk, en, pl, de
+Bot languages: uk, pl, en, de
 
 
-## Cloudflare required setup
-BOT_TOKEN must be added manually in Cloudflare as an encrypted Worker secret.
-The BOT_TOKEN must belong to the same bot as BOT_USERNAME above.
-After deployment, open the Worker URL once or run the Telegram repair endpoint so the webhook points to /api/telegram/webhook.
-Use Solution1 -> Integrations -> Cloudflare -> Test connection to verify botConfigured and webhook health.
+## Telegram / Cloudflare activation
+Use Solution1 -> Integrations -> Activate Telegram bot after the Worker exists.
+When Cloudflare Account ID + API token are configured, Solution1 uploads BOT_TOKEN as an encrypted Worker secret automatically.
+The same activation also configures the Telegram name, description, profile photo, commands, Mini App menu button and webhook.
+Use Diagnose /start to verify production BOT_TOKEN and webhook health.
 
 The .dev.vars file contains local secrets and must never be committed.

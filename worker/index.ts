@@ -6,7 +6,7 @@ import {scheduleState} from './lib/schedule';
 import {handleBotUpdate,ensureTelegramWebhook,telegramBotHealth,telegramWebhookSecret,repairTelegramBot,notifyNewOrder} from './lib/bot';
 import {runReactivationCampaigns} from './lib/campaigns';
 
-const VERSION='1.1.55';
+const VERSION='1.1.56';
 const json=(data:any,status=200)=>new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const read=async(r:Request)=>{try{return await r.json() as any}catch{return {}}};
 const escapeHtml=(value:string)=>value.replace(/[&<>"]/g,c=>c==='&'?'&amp;':c==='<'?'&lt;':c==='>'?'&gt;':'&quot;');
@@ -193,11 +193,14 @@ export default {
     return json({options});
    }
    if(url.pathname==='/api/content'&&request.method==='GET'){
-    const locale=(url.searchParams.get('locale')||'en').toLowerCase().startsWith('uk')?'uk':(url.searchParams.get('locale')||'en').toLowerCase().startsWith('pl')?'pl':'en';
+    const rawLocale=(url.searchParams.get('locale')||'en').toLowerCase();
+    const locale=rawLocale.startsWith('uk')?'uk':rawLocale.startsWith('pl')?'pl':rawLocale.startsWith('de')?'de':rawLocale.startsWith('fr')?'fr':'en';
     const defaults:any={
      uk:{'referral.title':'Запроси друга в Grivachevsky','referral.subtitle':'Поділися сервісом, якому довіряєш. Друг отримає зручний доступ до Grivachevsky Detailing, а ми подбаємо про його авто так само уважно.','referral.share_text':'Рекомендую Grivachevsky Detailing 🦎 Тут зручно підібрати послугу, розрахувати вартість і залишити заявку прямо в Telegram.'},
      pl:{'referral.title':'Zaproś znajomego do Grivachevsky','referral.subtitle':'Poleć miejsce, któremu ufasz. Znajomy szybko otworzy Grivachevsky Detailing w Telegramie, a my zadbamy o jego auto z taką samą uwagą.','referral.share_text':'Polecam Grivachevsky Detailing 🦎 W Telegramie możesz wygodnie wybrać usługę, sprawdzić cenę i wysłać zgłoszenie.'},
-     en:{'referral.title':'Invite a friend to Grivachevsky','referral.subtitle':'Share a service you trust. Your friend gets quick access to Grivachevsky Detailing in Telegram, and we will care for their car with the same attention.','referral.share_text':'I recommend Grivachevsky Detailing 🦎 Choose a service, check the estimate and send a request directly in Telegram.'}
+     en:{'referral.title':'Invite a friend to Grivachevsky','referral.subtitle':'Share a service you trust. Your friend gets quick access to Grivachevsky Detailing in Telegram, and we will care for their car with the same attention.','referral.share_text':'I recommend Grivachevsky Detailing 🦎 Choose a service, check the estimate and send a request directly in Telegram.'},
+     de:{'referral.title':'Freund zu Grivachevsky einladen','referral.subtitle':'Empfiehl einen Service, dem du vertraust. Dein Freund erhält schnellen Zugang zu Grivachevsky Detailing in Telegram.','referral.share_text':'Ich empfehle Grivachevsky Detailing 🦎 Leistung wählen, Preis prüfen und direkt in Telegram anfragen.'},
+     fr:{'referral.title':'Inviter un ami chez Grivachevsky','referral.subtitle':'Partagez un service de confiance. Votre ami accède rapidement à Grivachevsky Detailing dans Telegram.','referral.share_text':'Je recommande Grivachevsky Detailing 🦎 Choisissez un service, consultez le prix et envoyez une demande dans Telegram.'}
     };
     const content={...defaults[locale]};
     if(env.DB){await ensureDb(env);const r=await env.DB.prepare("SELECT key,value FROM content_blocks WHERE locale=? AND value<>''").bind(locale).all<any>();for(const row of r.results||[])content[row.key]=row.value}

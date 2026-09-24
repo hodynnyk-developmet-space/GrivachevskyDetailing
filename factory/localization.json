@@ -2,12 +2,14 @@
   "miniAppLanguages": [
     "uk",
     "en",
-    "pl"
+    "pl",
+    "de"
   ],
   "botLanguages": [
     "uk",
     "pl",
-    "en"
+    "en",
+    "de"
   ],
   "optionalBotPacks": [
     "de",
