@@ -1,5 +1,5 @@
 /**
- * ChameleonDetailing v1.1.46 — Google Sheets report receiver
+ * GrivachevskyDetailing v1.1.46 — Google Sheets report receiver
  * Bound spreadsheet:
  * https://docs.google.com/spreadsheets/d/1L8lF0A3SIQ06pmRDCq-7RwqNWvnRL9nomsMg0I7UxxM/edit
  *
@@ -34,14 +34,14 @@ function setup() {
     sheet.setFrozenRows(1);
   });
   PropertiesService.getScriptProperties().setProperty('SETUP_AT', new Date().toISOString());
-  Logger.log('ChameleonDetailing Google Sheets receiver is ready: ' + ss.getUrl());
+  Logger.log('GrivachevskyDetailing Google Sheets receiver is ready: ' + ss.getUrl());
 }
 
 function doGet() {
   const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
   return json_({
     ok: true,
-    service: 'ChameleonDetailing Google Sheets receiver',
+    service: 'GrivachevskyDetailing Google Sheets receiver',
     title: ss.getName(),
     sheetUrl: ss.getUrl(),
     lastSyncAt: PropertiesService.getScriptProperties().getProperty('LAST_SYNC_AT') || '',

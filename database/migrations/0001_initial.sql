@@ -159,13 +159,13 @@ ON CONFLICT(service_id,locale) DO UPDATE SET title=excluded.title,description=ex
 
 -- v1.1.11 referral panel copy defaults
 INSERT OR IGNORE INTO content_blocks(key,locale,value) VALUES
-('referral.title','uk','Запроси друга в Chameleon'),
+('referral.title','uk','Запроси друга в Grivachevsky'),
 ('referral.subtitle','uk','Поділися сервісом, якому довіряєш. Друг отримає зручний доступ до Grivachevsky Detailing, а ми подбаємо про його авто так само уважно.'),
 ('referral.share_text','uk','Рекомендую Grivachevsky Detailing 🦎 Тут зручно підібрати послугу, розрахувати вартість і залишити заявку прямо в Telegram.'),
-('referral.title','pl','Zaproś znajomego do Chameleon'),
+('referral.title','pl','Zaproś znajomego do Grivachevsky'),
 ('referral.subtitle','pl','Poleć miejsce, któremu ufasz. Znajomy szybko otworzy Grivachevsky Detailing w Telegramie, a my zadbamy o jego auto z taką samą uwagą.'),
 ('referral.share_text','pl','Polecam Grivachevsky Detailing 🦎 W Telegramie możesz wygodnie wybrać usługę, sprawdzić cenę i wysłać zgłoszenie.'),
-('referral.title','en','Invite a friend to Chameleon'),
+('referral.title','en','Invite a friend to Grivachevsky'),
 ('referral.subtitle','en','Share a service you trust. Your friend gets quick access to Grivachevsky Detailing in Telegram, and we will care for their car with the same attention.'),
 ('referral.share_text','en','I recommend Grivachevsky Detailing 🦎 Choose a service, check the estimate and send a request directly in Telegram.');
 

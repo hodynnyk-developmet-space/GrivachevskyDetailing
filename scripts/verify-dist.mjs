@@ -8,7 +8,7 @@ for (const file of required) {
 }
 const html = readFileSync('dist/index.html', 'utf8');
 if (!html.includes('id="root"')) {
-  console.error('[verify-dist] dist/index.html does not look like the Chameleon React app.');
+  console.error('[verify-dist] dist/index.html does not look like the Grivachevsky React app.');
   process.exit(1);
 }
-console.log('[verify-dist] Chameleon frontend build output is present.');
+console.log('[verify-dist] Grivachevsky frontend build output is present.');

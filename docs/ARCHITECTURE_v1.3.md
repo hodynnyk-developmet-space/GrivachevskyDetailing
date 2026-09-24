@@ -6772,7 +6772,7 @@ FULL SCREEN
 
 - black / graphite background;
 - lime accent glow;
-- Chameleon brand icon / lizard mascot;
+- Grivachevsky brand icon / lizard mascot;
 - subtle detailing shine;
 - logo centered;
 - no clutter.
@@ -6780,7 +6780,7 @@ FULL SCREEN
 Центральний елемент:
 
 ```text
-Chameleon icon / mascot
+Grivachevsky icon / mascot
 ```
 
 або брендований знак.
@@ -6794,7 +6794,7 @@ Chameleon icon / mascot
 Структура:
 
 ```text
-        [ CHAMELEON ICON ]
+        [ GRIVACHEVSKY ICON ]
 
         Grivachevsky Detailing
 
@@ -7040,7 +7040,7 @@ VIP card може мати:
 
 ---
 
-# 259. Chameleon Mascot Micro-Animations
+# 259. Grivachevsky Mascot Micro-Animations
 
 Ящірка може використовуватися як functional brand character.
 
@@ -7149,7 +7149,7 @@ config/motion.ts
 2. Motion system централізований через tokens/config.
 3. Calculator має компактний processing overlay, не full screen.
 4. Після processing overlay відкривається result modal.
-5. Calculator loading має branded Chameleon animation.
+5. Calculator loading має branded Grivachevsky animation.
 6. Startup Mini App має окремий full-screen splash screen.
 7. Splash містить brand icon/mascot.
 8. Під icon розміщується status/progress bar.
@@ -7159,7 +7159,7 @@ config/motion.ts
 11. Startup splash route-ить Maintenance / Blacklist / Holiday / Owner bypass states.
 12. Success/payment animations запускаються тільки після backend confirmation.
 13. Skeleton loaders використовуються для локального content loading.
-14. Chameleon mascot використовується у functional micro-animation states.
+14. Grivachevsky mascot використовується у functional micro-animation states.
 15. `prefers-reduced-motion` підтримується обов'язково.
 16. Animation assets зберігаються модульно й замінюються окремо.
 

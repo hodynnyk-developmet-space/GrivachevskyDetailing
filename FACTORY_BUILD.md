@@ -11,4 +11,11 @@ Telegram: @GrivachevskyDetailing_bot
 Mini App languages: uk, en, pl
 Bot languages: uk, pl, en
 
+
+## Cloudflare required setup
+BOT_TOKEN must be added manually in Cloudflare as an encrypted Worker secret.
+The BOT_TOKEN must belong to the same bot as BOT_USERNAME above.
+After deployment, open the Worker URL once or run the Telegram repair endpoint so the webhook points to /api/telegram/webhook.
+Use Solution1 -> Integrations -> Cloudflare -> Test connection to verify botConfigured and webhook health.
+
 The .dev.vars file contains local secrets and must never be committed.

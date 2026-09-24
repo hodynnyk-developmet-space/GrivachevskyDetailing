@@ -1,3 +1,7 @@
+node_modules/
+dist/
+.wrangler/
+release/
 .dev.vars
 *.factory-secrets.json
 .factory-cache/

@@ -10,11 +10,12 @@
     "run_worker_first": true
   },
   "vars": {
+    "APP_URL": "https://grivachevskydetailing.hodynnyk-development-space.workers.dev",
     "APP_NAME": "GrivachevskyDetailing",
     "BOT_USERNAME": "GrivachevskyDetailing_bot",
-    "OWNER_TELEGRAM_ID": "375938798",
-    "DEFAULT_LOCALE": "en",
-    "DEFAULT_CURRENCY": "PLN",
+    "OWNER_TELEGRAM_ID": "960724157",
+    "DEFAULT_LOCALE": "uk",
+    "DEFAULT_CURRENCY": "USD",
     "BUSINESS_TIMEZONE": "Europe/Warsaw"
   },
   "d1_databases": [
