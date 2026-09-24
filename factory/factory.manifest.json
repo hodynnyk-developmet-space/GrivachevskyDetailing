@@ -1,0 +1,14 @@
+{
+  "generator": "Solution1 Product Factory",
+  "generatorVersion": "1.0.0",
+  "generatedAt": "2026-09-24T12:28:11.027Z",
+  "template": {
+    "name": "Chameleon Core",
+    "version": "1.x",
+    "sourceMode": "git",
+    "gitUrl": "https://github.com/technoperspektiva-ai/ChameleonDetailing.git",
+    "branch": "main",
+    "localPath": ""
+  },
+  "productId": "0cca141b-3406-496e-b6c9-491b50dda3f4"
+}

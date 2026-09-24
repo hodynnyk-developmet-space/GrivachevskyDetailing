@@ -1,0 +1,87 @@
+{
+  "id": "0cca141b-3406-496e-b6c9-491b50dda3f4",
+  "name": "Grivachevsky Detailing",
+  "slug": "grivachevsky-detailing",
+  "createdAt": "2026-09-24T11:35:24.509Z",
+  "updatedAt": "2026-09-24T12:16:32.945Z",
+  "template": {
+    "name": "Chameleon Core",
+    "version": "1.x",
+    "sourceMode": "git",
+    "gitUrl": "https://github.com/technoperspektiva-ai/ChameleonDetailing.git",
+    "branch": "main",
+    "localPath": ""
+  },
+  "brand": {
+    "displayName": "Grivachevsky Detailing",
+    "shortName": "Grivachevsky Detailing",
+    "tagline": "Premium care directly in Telegram",
+    "accent": "#a4ff00",
+    "background": "#070a07",
+    "surface": "#111711",
+    "radius": 22,
+    "logoPath": "C:\\Users\\games\\Desktop\\Grivachevsky Detailing.jpg"
+  },
+  "home": {
+    "heroTitle": "Detailing that adapts to you",
+    "heroSubtitle": "Premium car care with a fast calculator and Telegram Mini App."
+  },
+  "languages": [
+    "uk",
+    "en",
+    "pl"
+  ],
+  "currency": "USD",
+  "services": [
+    {
+      "id": "8abf7fc8-1049-482c-8751-c8361ac8f655",
+      "title": "Exterior detailing",
+      "description": "Deep clean, decontamination and gloss.",
+      "basePrice": 69,
+      "popular": true
+    },
+    {
+      "id": "a4f83791-5399-4716-b47f-14ddc40df574",
+      "title": "Interior detailing",
+      "description": "Clean and comfortable interior.",
+      "basePrice": 79,
+      "popular": true
+    },
+    {
+      "id": "79dd1566-f7be-4a37-aa16-67c790efedc3",
+      "title": "Full detailing",
+      "description": "Complete interior and exterior refresh.",
+      "basePrice": 129,
+      "popular": true
+    }
+  ],
+  "integrations": {
+    "telegram": {
+      "botUsername": "@GrivachevskyDetailing_bot",
+      "ownerId": "960724157",
+      "miniAppUrl": ""
+    },
+    "cloudflare": {
+      "workerName": "grivachevskydetailing",
+      "workerUrl": "https://grivachevskydetailing.hodynnyk-development-space.workers.dev",
+      "d1Name": "grivachevskydetailing",
+      "d1DatabaseId": "10e68ab2-153d-4932-9f10-d70dbf03d7a0",
+      "accountId": "016edb9a4bdd0aa112e3772344dca911"
+    },
+    "sheets": {
+      "webhookUrl": "https://script.google.com/macros/s/AKfycbz5SIRpGLwQN5FEA3S77MOmPLkA6vQMWQ_HrntOS-Zz5iovmTZAmv1KRzjx1vxs4S1mEQ/exec"
+    },
+    "github": {
+      "targetRepoUrl": "https://github.com/hodynnyk-developmet-space/GrivachevskyDetailing",
+      "defaultBranch": "main"
+    }
+  },
+  "output": {
+    "directory": "C:\\Users\\games\\Desktop\\Grivachevsky Detailing"
+  },
+  "botLanguages": [
+    "uk",
+    "pl",
+    "en"
+  ]
+}

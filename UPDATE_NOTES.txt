@@ -1,0 +1,30 @@
+GrivachevskyDetailing v1.1.54 UPDATE — Client Reviews & Suggestions
+
+1. Added two client-menu actions in the Telegram bot:
+   - ⭐ Leave a review
+   - 💡 Suggest an idea
+   Labels follow UA / PL / EN.
+2. Client flow:
+   - enter review/suggestion text;
+   - optionally attach one photo;
+   - or submit without a photo;
+   - cancel is available at every step.
+3. Feedback is stored in D1 table client_feedback with:
+   - user ID,
+   - type (REVIEW / SUGGESTION),
+   - text,
+   - optional Telegram photo file_id,
+   - user language,
+   - status,
+   - creation time.
+4. Reports & Excel for Owner/Admin now includes:
+   - ⭐ Reviews Excel
+   - 💡 Suggestions Excel
+   Each report supports 7 / 30 / 90 days / All.
+5. Full Business Report now also contains separate Reviews and Suggestions sheets.
+6. Export includes client identity, text, photo presence, Telegram photo file ID, language, status and created timestamp.
+7. The report buttons are registered in the Owner menu editor under Reports.
+8. Full project data reset also clears reviews and suggestions.
+9. Existing payments, localized reports, social links, specialists and chat cleanup controls remain unchanged.
+
+Redeploy the Cloudflare Worker after updating the repository.

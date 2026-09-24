@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "services": [
+    {
+      "id": "8abf7fc8-1049-482c-8751-c8361ac8f655",
+      "title": "Exterior detailing",
+      "description": "Deep clean, decontamination and gloss.",
+      "basePrice": 69,
+      "popular": true
+    },
+    {
+      "id": "a4f83791-5399-4716-b47f-14ddc40df574",
+      "title": "Interior detailing",
+      "description": "Clean and comfortable interior.",
+      "basePrice": 79,
+      "popular": true
+    },
+    {
+      "id": "79dd1566-f7be-4a37-aa16-67c790efedc3",
+      "title": "Full detailing",
+      "description": "Complete interior and exterior refresh.",
+      "basePrice": 129,
+      "popular": true
+    }
+  ]
+}

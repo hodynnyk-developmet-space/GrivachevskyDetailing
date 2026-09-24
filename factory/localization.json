@@ -1,0 +1,17 @@
+{
+  "miniAppLanguages": [
+    "uk",
+    "en",
+    "pl"
+  ],
+  "botLanguages": [
+    "uk",
+    "pl",
+    "en"
+  ],
+  "optionalBotPacks": [
+    "de",
+    "fr"
+  ],
+  "fallbackLocale": "en"
+}
